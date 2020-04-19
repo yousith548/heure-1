@@ -1,0 +1,14 @@
+.location {
+  text-align: center;
+  font-size: 3.1em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.location-dark {
+  color: #ffffff;
+}
+
+.location-light {
+  color: #4a4a4a;
+}

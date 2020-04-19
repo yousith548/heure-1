@@ -1,0 +1,17 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 75px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body.dark {
+  background-color: #1e2227;
+}
+
+body.light {
+  background-color: #ffffff;
+}

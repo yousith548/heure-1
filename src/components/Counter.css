@@ -1,0 +1,12 @@
+.counter {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.counter-dark {
+  color: #6f6f6f;
+}
+
+.counter-light {
+  color: #cacaca;
+}
