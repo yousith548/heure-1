@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useContext } from "react";
+import React, { useState, useEffect, useCallback, useContext, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import moment from "moment";
@@ -36,6 +36,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { ThemeContext } from "../contexts/ThemeContext";
 import ReactGA from "react-ga";
 import "./Daily.css";
+import PrayerData  from "./prayer-data";
 
 const cookies = new Cookies();
 
@@ -155,7 +156,7 @@ ReactGA.initialize(process.env.REACT_APP_GA);
 
 library.add(fab, fas);
 
-function Daily({ locationProps = 77, root }) {
+function Daily({ locationProps = 1, root }) {
   const context = useContext(ThemeContext);
   const localization = useCallback(() => {
     if (root && cookies.get("location") !== undefined) {
@@ -178,6 +179,15 @@ function Daily({ locationProps = 77, root }) {
       return 6;
     }
   };
+
+  const _data = useRef(new PrayerData());
+
+ 
+
+const getPrayerTimes = () => _data.current.getPrayerTimes();
+  
+const times = useState(()=>getPrayerTimes());
+  
 
   const [notification, setNotification] = useState();
   const [currentMoment, setCurrentMoment] = useState(
@@ -232,6 +242,10 @@ function Daily({ locationProps = 77, root }) {
       setNextVakatPosition(6);
     }
   }, [localization, showNotifications, vaktija]);
+
+  useEffect(() => {
+    _data.current.getSpeadsheetUrl(setVaktija);
+  }, [setVaktija]);
 
   useEffect(() => {
     const interval = setInterval(() => tick(), 1000);
@@ -366,7 +380,7 @@ function Daily({ locationProps = 77, root }) {
           </Col>
         </Row>
         <Row>
-          {vakatNames.map((vakatName, index) => (
+        {vakatNames.map((vakatName, index) => (
             <Col
               key={vaktija[index]}
               className="text-center"
@@ -375,9 +389,12 @@ function Daily({ locationProps = 77, root }) {
               md={12}
               lg={2}
             >
-              <Vakat
-                theme={theme}
-                vakatTime={vaktija[index]}
+              <Vakat 
+                theme={theme} 
+                vakatTime={times.map((time,indexx) =>(
+                <span  key={vaktija[indexx]}>
+                  {time[vakatName]}
+                  </span>))}
                 vakatName={vakatName}
                 highlight={nextVakatPosition === index ? true : false}
               />
@@ -407,5 +424,4 @@ function Daily({ locationProps = 77, root }) {
     </>
   );
 }
-
 export default Daily;

@@ -1,10 +1,10 @@
-import { differences, vaktija } from "../../data/vaktija.json";
+import { differences, vaktija, prayerData } from "../../data/vaktija.json";
 import moment from "moment";
 import "moment-timezone";
 import "moment-duration-format";
 
 export const daily = (
-  location = 77,
+  location = 1,
   year = new Date().getFullYear(),
   month = new Date().getMonth() + 1,
   day = new Date().getDate()
@@ -28,7 +28,8 @@ export const daily = (
                 "s"
               )
               .format("HH:mm")
-      )
+      ),
+      url: prayerData[location]
     };
   }
 };
