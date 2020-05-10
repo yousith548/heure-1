@@ -14,7 +14,7 @@ export const monthly = (
       .map((d, j) => ({
         vakat: d.vakat.map((v, i) =>
           moment([year, month - 1, j + 1])
-            .tz("Europe/Sarajevo")
+            .tz("Europe/Paris")
             .add(3, "h")
             .isDST()
             ? moment

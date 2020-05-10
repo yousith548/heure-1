@@ -4,21 +4,20 @@ import csvtojson from 'csvtojson';
 import request from 'request';
 
 class PrayerData {
-  constructor() {
+  constructor(locationProps) {
+    this.locationProps=locationProps;
     this.updateData();
   }
 
-  getPrayerTimes(date = null) {
+   getPrayerTimes(date = null) {
     date = date === null ? moment().format('DD/MM/YYYY') : date;
     var data = this.getPrayerData();
     return data ? data[date] : [];
   }
-  
 
-  getSpeadsheetUrl(locationProps) {
-    return config.prayerData[locationProps];
+  getSpeadsheetUrl() {
+    return config.prayerData[this.locationProps];
   }
-
 
   getPrayerTimesFromGoogleSheets() {
     var spreadsheetUrl = this.getSpeadsheetUrl();
@@ -72,3 +71,4 @@ class PrayerData {
 }
 
 export default PrayerData;
+ 

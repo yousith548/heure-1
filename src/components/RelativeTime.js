@@ -7,7 +7,7 @@ import "./RelativeTime.css";
 function RelativeTime({ currentMoment, vakatTime, theme }) {
   return (
     <p className={`relative-time relative-time-${theme}`}>
-      {currentMoment.to(moment(vakatTime, "HH:mm").tz("Europe/Sarajevo"))}
+      {currentMoment.to(moment(vakatTime, "HH:mm").tz("Europe/Paris"))}
     </p>
   );
 }

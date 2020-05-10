@@ -1,4 +1,4 @@
-import { differences, vaktija, prayerData } from "../../data/vaktija.json";
+import { differences, vaktija } from "../../data/vaktija.json";
 import moment from "moment";
 import "moment-timezone";
 import "moment-duration-format";
@@ -14,7 +14,7 @@ export const daily = (
       vakat: vaktija.months[month - 1].days[day - 1].vakat.map((v, i) =>
         moment([year, month - 1, day])
           .add(3, "h")
-          .tz("Europe/Sarajevo")
+          .tz("Europe/Paris")
           .isDST()
           ? moment
               .duration(
@@ -28,8 +28,7 @@ export const daily = (
                 "s"
               )
               .format("HH:mm")
-      ),
-      url: prayerData[location]
+      )
     };
   }
 };

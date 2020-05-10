@@ -12,7 +12,7 @@ export const yearly = (location = 77, year = new Date().getFullYear()) => {
           vakat: d.vakat.map((v, l) =>
             moment([year, i, k + 1])
               .add(3, "h")
-              .tz("Europe/Sarajevo")
+              .tz("Europe/Paris")
               .isDST()
               ? moment
                   .duration(

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useContext, useRef } from "react";
+import React, { useState, useEffect, useCallback, useContext, useRef} from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import moment from "moment";
@@ -55,7 +55,7 @@ const toOrdinalSuffixMinutes = num => {
 const toOrdinalSuffixHours = num => {
   const int = parseInt(num, 10),
     digits = [int % 10, int % 100],
-    ordinals = [" sat", " sata", " sata", " sata", " sati"],
+    ordinals = [" heure", " heures", " heures", " heures", " heures"],
     oPattern = [1, 2, 3, 4],
     tPattern = [11, 12, 13, 14, 15, 16, 17, 18, 19];
   return oPattern.includes(digits[0]) && !tPattern.includes(digits[1])
@@ -121,31 +121,31 @@ const translate = (number, withoutSuffix, key) => {
 moment.updateLocale("bs", {
   iMonths: [
     "Muharrem",
-    "Safer",
-    "Rebi'u-l-evvel",
-    "Rebi'u-l-ahir",
+    "Safar",
+    "Rabii al awal",
+    "Rabii ath-thani",
     "Džumade-l-ula",
     "Džumade-l-uhra",
     "Redžeb",
     "Ša'ban",
-    "Ramazan",
+    "Ramadan",
     "Ševval",
     "Zu-l-ka'de",
     "Zu-l-hidždže"
   ],
-  weekdaysShort: ["ned", "pon", "uto", "sri", "čet", "pet", "sub"],
+  weekdaysShort: ["Dim", "Lun", "Mar", "Mer", "Jeudi", "Vendredi", "Samedi"],
   relativeTime: {
-    future: "za %s",
-    past: "prije %s",
-    s: "par sekundi",
+    future: "dans %s",
+    past: "il y a %s",
+    s: "quelques secondes",
     ss: translate,
     m: translate,
     mm: translate,
     h: translate,
     hh: translate,
-    d: "dan",
+    d: "un jour",
     dd: translate,
-    M: "mjesec",
+    M: "un mois",
     MM: translate,
     y: "godinu",
     yy: translate
@@ -157,7 +157,24 @@ ReactGA.initialize(process.env.REACT_APP_GA);
 library.add(fab, fas);
 
 function Daily({ locationProps = 1, root }) {
+
   const context = useContext(ThemeContext);
+
+  const _data = useRef(new PrayerData(locationProps));
+
+ // eslint-disable-next-line
+ useEffect(() => {
+      _data.current.getPrayerTimesFromGoogleSheets();
+      }, [locationProps]);
+
+
+let newObj = Object.entries(_data.current.getPrayerTimes());
+
+
+ 
+   
+ 
+
   const localization = useCallback(() => {
     if (root && cookies.get("location") !== undefined) {
       return cookies.get("location");
@@ -165,12 +182,19 @@ function Daily({ locationProps = 1, root }) {
     return locationProps;
   }, [locationProps, root]);
 
-  const nextVakat = () => {
+
+
+
+  
+
+
+
+ const nextVakat = () => {
     const nextVakatPosition = daily(localization()).vakat.map((v, i) => ({
       pos: i,
       active: moment()
-        .tz("Europe/Sarajevo")
-        .isSameOrBefore(moment(v, "HH:mm").tz("Europe/Sarajevo"))
+        .tz("Europe/Paris")
+        .isSameOrBefore(moment(v, "HH:mm").tz("Europe/Paris"))
     }));
 
     if (nextVakatPosition.filter(n => n.active === true).length) {
@@ -180,27 +204,18 @@ function Daily({ locationProps = 1, root }) {
     }
   };
 
-  const _data = useRef(new PrayerData());
-
- 
-
-const getPrayerTimes = () => _data.current.getPrayerTimes();
-  
-const times = useState(()=>getPrayerTimes());
-  
-
   const [notification, setNotification] = useState();
   const [currentMoment, setCurrentMoment] = useState(
-    moment().tz("Europe/Sarajevo")
+    moment().tz("Europe/Paris")
   );
   const [locationState] = useState(localization());
   const [vaktija, setVaktija] = useState(daily(localization()).vakat);
   const [nextVakatPosition, setNextVakatPosition] = useState(nextVakat());
   const { toggleTheme, initTheme, automaticTheme, theme } = context;
   const [date, setDate] = useState([
-    moment().tz("Europe/Sarajevo").format("ddd, D. MMMM"),
-    moment().tz("Europe/Sarajevo").format("YYYY"),
-    momentHijri().tz("Europe/Sarajevo").format("iD. iMMMM iYYYY").toLowerCase()
+    moment().tz("Europe/Paris").format("ddd, D. MMMM"),
+    moment().tz("Europe/Paris").format("YYYY"),
+    momentHijri().tz("Europe/Paris").format("iD. iMMMM iYYYY").toLowerCase()
   ]);
 
   const showNotifications = useCallback(() => {
@@ -208,24 +223,24 @@ const times = useState(()=>getPrayerTimes());
   }, [notification]);
 
   const tick = useCallback(() => {
-    const clock = moment().tz("Europe/Sarajevo").format();
+    const clock = moment().tz("Europe/Paris").format();
     const notifs = vaktija.map((v, i) =>
-      moment(v, "HH:mm").tz("Europe/Sarajevo").subtract(15, "m").format()
+      moment(v, "HH:mm").tz("Europe/Paris").subtract(15, "m").format()
     );
     const nextVakatPosition = daily(localization()).vakat.map((v, i) => ({
       pos: i,
       active: moment()
-        .tz("Europe/Sarajevo")
-        .isSameOrBefore(moment(v, "HH:mm").tz("Europe/Sarajevo"))
+        .tz("Europe/Paris")
+        .isSameOrBefore(moment(v, "HH:mm").tz("Europe/Paris"))
     }));
 
-    setCurrentMoment(moment().tz("Europe/Sarajevo"));
+    setCurrentMoment(moment().tz("Europe/Paris"));
     setVaktija(daily(localization()).vakat);
     setDate([
-      moment().tz("Europe/Sarajevo").format("ddd, D. MMMM"),
-      moment().tz("Europe/Sarajevo").format("YYYY"),
+      moment().tz("Europe/Paris").format("ddd, D. MMMM"),
+      moment().tz("Europe/Paris").format("YYYY"),
       momentHijri()
-        .tz("Europe/Sarajevo")
+        .tz("Europe/Paris")
         .format("iD. iMMMM iYYYY")
         .toLowerCase()
     ]);
@@ -243,9 +258,7 @@ const times = useState(()=>getPrayerTimes());
     }
   }, [localization, showNotifications, vaktija]);
 
-  useEffect(() => {
-    _data.current.getSpeadsheetUrl(setVaktija);
-  }, [setVaktija]);
+  
 
   useEffect(() => {
     const interval = setInterval(() => tick(), 1000);
@@ -273,7 +286,7 @@ const times = useState(()=>getPrayerTimes());
       cookies.set("location", locationProps, {
         path: "/",
         domain: ".vaktija.ba",
-        expires: moment().add(1, "y").tz("Europe/Sarajevo").toDate()
+        expires: moment().add(1, "y").tz("Europe/Paris").toDate()
       });
     }
     ReactGA.set({ title: `${locations[locationState]} · Vaktija` });
@@ -294,7 +307,11 @@ const times = useState(()=>getPrayerTimes());
     e.preventDefault();
     document.getElementById("sidenav").style.width = "0";
   };
-
+    console.table(momentHijri()
+        .tz("Europe/Paris")
+        .format("D. MMMM YYYY")
+        .toLowerCase()); 
+  
   return (
     <>
       <Helmet>
@@ -361,7 +378,7 @@ const times = useState(()=>getPrayerTimes());
         </Row>
         <Row>
           <Col className="text-center" xs={12} sm={12} md={12} lg={12}>
-            <Counter theme={theme} vakatTime={vaktija[nextVakatPosition]} />
+            <Counter theme={theme} vakatTime={newObj[nextVakatPosition+1][1]} />
           </Col>
         </Row>
         <Row>
@@ -390,11 +407,8 @@ const times = useState(()=>getPrayerTimes());
               lg={2}
             >
               <Vakat 
-                theme={theme} 
-                vakatTime={times.map((time,indexx) =>(
-                <span  key={vaktija[indexx]}>
-                  {time[vakatName]}
-                  </span>))}
+                theme={theme}
+                vakatTime={newObj[index+1][1]}
                 vakatName={vakatName}
                 highlight={nextVakatPosition === index ? true : false}
               />

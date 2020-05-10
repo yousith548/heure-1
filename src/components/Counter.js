@@ -1,11 +1,11 @@
 import React from "react";
 import moment from "moment";
-import "./Counter.css";
+import "./Counter.css"; 
 
 function Counter({ vakatTime, theme }) {
-  const vakatMoment = moment(vakatTime, "HH:mm").tz("Europe/Sarajevo");
+  const vakatMoment = moment(vakatTime, "HH:mm").tz("Europe/Paris");
   const duration = moment.duration(
-    vakatMoment.diff(moment().tz("Europe/Sarajevo"))
+    vakatMoment.diff(moment().tz("Europe/Paris"))
   );
 
   if (vakatTime === undefined) {
