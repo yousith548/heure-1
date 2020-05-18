@@ -84,7 +84,7 @@ const translate = (number, withoutSuffix, key) => {
       result += toOrdinalSuffixMinutes(number);
       return result;
     case "h":
-      return withoutSuffix ? "jedan sat" : "jedan sat";
+      return withoutSuffix ? "jedan" : "jedan sat";
     // result += toOrdinalSuffixHours(number);
     // return result;
     case "hh":
@@ -156,7 +156,7 @@ ReactGA.initialize(process.env.REACT_APP_GA);
 
 library.add(fab, fas);
 
-function Daily({ locationProps = 1, root }) {
+function Daily({ locationProps = 72, root }) {
 
   const context = useContext(ThemeContext);
 
@@ -317,7 +317,7 @@ let newObj = Object.entries(_data.current.getPrayerTimes());
       <Helmet>
         <link
           rel="canonical"
-          href={`https://vaktija.ba/${slugify(locations[locationState], {
+          href={`https://heuredepriere.tech/${slugify(locations[locationState], {
             replacement: "-",
             remove: null,
             lower: true
@@ -325,17 +325,17 @@ let newObj = Object.entries(_data.current.getPrayerTimes());
         />
         <meta
           name="description"
-          content={`Vaktija za ${locationsDative[locationState]}, ${date[0]} ${
+          content={`Heure de priere ${locationsDative[locationState]}, ${date[0]} ${
             date[1]
           } / ${date[2]}${vakatNames.map(
             (vakatName, index) => ` ${vakatName} ${vaktija[index]}`
-          )}. Preuzmite oficijelne Android, iOS (iPhone, iPad) i Windows mobilne aplikacije, namaz, salat, džuma, sehur, ramazan, iftar, teravija, takvim, bosna i hercegovina, sandžak`}
+          )}. horaire de priere paris, heure de priere paris`}
         />
         <meta
           name="theme-color"
           content={theme === "light" ? "#ffffff" : "#1e2227"}
         />
-        <title>{`${locations[locationState]} · Vaktija`}</title>
+        <title>{`${locations[locationState]} · Heure de priere`}</title>
       </Helmet>
       <ReactNotifications
         onRef={ref => setNotification(ref)}
@@ -355,14 +355,14 @@ let newObj = Object.entries(_data.current.getPrayerTimes());
                   height="32"
                   width="32"
                   className="brand"
-                  alt="vaktija.ba"
+                  alt="heuredepriere.tech"
                 />
               ) : (
                 <IconLight
                   height="32"
                   width="32"
                   className="brand"
-                  alt="vaktija.ba"
+                  alt="heuredepriere.tech"
                 />
               )}
             </Link>
@@ -414,7 +414,7 @@ let newObj = Object.entries(_data.current.getPrayerTimes());
               />
               <RelativeTime
                 theme={theme}
-                vakatTime={vaktija[index]}
+                vakatTime={newObj[index+1][1]}
                 currentMoment={currentMoment}
               />
             </Col>

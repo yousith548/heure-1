@@ -45,10 +45,10 @@ function ThemeContextProvider(props) {
       document.body.classList.add("dark");
       cookies.set("theme", theme, {
         path: "/",
-        domain: ".vaktija.ba",
+        domain: ".heuredepriere.tech",
         expires: moment()
           .add(1, "y")
-          .tz("Europe/Sarajevo")
+          .tz("Europe/Paris")
           .toDate()
       });
     } else if (theme === "light") {
@@ -58,10 +58,10 @@ function ThemeContextProvider(props) {
       document.body.classList.add("light");
       cookies.set("theme", theme, {
         path: "/",
-        domain: ".vaktija.ba",
+        domain: ".heuredepriere.tech",
         expires: moment()
           .add(1, "y")
-          .tz("Europe/Sarajevo")
+          .tz("Europe/Paris")
           .toDate()
       });
     }

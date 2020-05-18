@@ -3,7 +3,7 @@ import moment from "moment";
 import momentHijri from "moment-hijri";
 import "moment-timezone";
 import "moment-duration-format";
-import "moment/locale/bs";
+import "moment/locale/fr";
 import Cookies from "universal-cookie";
 import { daily } from "../api/vaktija/index.mjs";
 import { locations, vakatNames } from "../data/vaktija.json";
@@ -19,14 +19,14 @@ const iMonths = [
   "Džumade-l-uhra",
   "Redžeb",
   "Ša'ban",
-  "Ramazan",
+  "Ramadan",
   "Ševval",
   "Zu-l-ka'de",
   "Zu-l-hidždže"
 ];
 
-const weekdaysShort = ["ned", "pon", "uto", "sri", "čet", "pet", "sub"];
-moment.updateLocale("bs", {
+const weekdaysShort = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+moment.updateLocale("fr", {
   iMonths,
   weekdaysShort
 });
@@ -43,10 +43,10 @@ function Mobile() {
   const [data, setData] = useState(daily(localization()));
   const [date, setDate] = useState([
     moment()
-      .tz("Europe/Sarajevo")
+      .tz("Europe/Paris")
       .format("ddd, D. MMMM YYYY"),
     momentHijri()
-      .tz("Europe/Sarajevo")
+      .tz("Europe/Paris")
       .format("iD. iMMMM iYYYY")
       .toLowerCase()
   ]);
@@ -55,10 +55,10 @@ function Mobile() {
     setLocation(Number(e.target.value));
     cookies.set("location", Number(e.target.value), {
       path: "/",
-      domain: ".vaktija.ba",
+      domain: ".heuredepriere.tech",
       expires: moment()
         .add(1, "y")
-        .tz("Europe/Sarajevo")
+        .tz("Europe/Paris")
         .toDate()
     });
   };
@@ -68,10 +68,10 @@ function Mobile() {
       () =>
         setDate([
           moment()
-            .tz("Europe/Sarajevo")
+            .tz("Europe/Paris")
             .format("ddd, D. MMMM YYYY"),
           momentHijri()
-            .tz("Europe/Sarajevo")
+            .tz("Europe/Paris")
             .format("iD. iMMMM iYYYY")
             .toLowerCase()
         ]),
@@ -84,10 +84,10 @@ function Mobile() {
     setData(daily(location));
     cookies.set("location", location, {
       path: "/",
-      domain: ".vaktija.ba",
+      domain: ".heuredepriere.tech",
       expires: moment()
         .add(1, "y")
-        .tz("Europe/Sarajevo")
+        .tz("Europe/Paris")
         .toDate()
     });
   }, [date, location]);
@@ -125,8 +125,8 @@ function Mobile() {
           </tr>
           <tr>
             <td className="link" colSpan={2}>
-              <a className="link" href="https://vaktija.ba">
-                vaktija.ba
+              <a className="link" href="https://heuredepriere.tech">
+                heuredepriere.tech
               </a>
             </td>
           </tr>
