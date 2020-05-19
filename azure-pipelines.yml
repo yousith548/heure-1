@@ -23,7 +23,6 @@ steps:
       pushd $(uiSource)
       yarn install
       yarn run build --prod
-      popd
     displayName: "Build UI"
 
   - task: ArchiveFiles@2
