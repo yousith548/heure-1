@@ -22,7 +22,7 @@ steps:
   - script: |
       pushd $(uiSource)
       yarn install
-      yarn run build --prod
+      yarn run build
     displayName: "Build UI"
 
   - task: ArchiveFiles@2
