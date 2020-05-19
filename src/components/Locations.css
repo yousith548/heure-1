@@ -65,7 +65,7 @@ li {
   float: left;
 }
 
-li a['disabled'] {
+li a {
   display: block;
   text-align: left;
   padding: 0px;
