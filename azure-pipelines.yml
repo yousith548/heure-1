@@ -15,8 +15,8 @@ steps:
     versionSpec: '12.x'
   displayName: 'Install Node.js'
 
-- script: |
-    npm cache clean --force    
+- script: |    
     npm install
+    npm install react-scripts --save
     npm run build
   displayName: 'npm install and build'
