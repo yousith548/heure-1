@@ -378,7 +378,7 @@ let newObj = Object.entries(_data.current.getPrayerTimes());
         </Row>
         <Row>
           <Col className="text-center" xs={12} sm={12} md={12} lg={12}>
-            <Counter theme={theme} vakatTime={newObj[nextVakatPosition+1][1]} />
+            <Counter theme={theme} vakatTime={newObj[nextVakatPosition][1]} />
           </Col>
         </Row>
         <Row>
