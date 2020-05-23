@@ -1,591 +1,496 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://vaktija.ba/ajaccio</loc>
+        <loc>https://heuredepriere.tech/ajaccio</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/alencon</loc>
+        <loc>https://heuredepriere.tech/alencon</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/ales</loc>
+        <loc>https://heuredepriere.tech/ales</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/amiens</loc>
+        <loc>https://heuredepriere.tech/amiens</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/angers</loc>
+        <loc>https://heuredepriere.tech/angers</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/angouleme</loc>
+        <loc>https://heuredepriere.tech/angouleme</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/annecy</loc>
+        <loc>https://heuredepriere.tech/annecy</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/annemasse</loc>
+        <loc>https://heuredepriere.tech/annemasse</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/arles</loc>
+        <loc>https://heuredepriere.tech/arles</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/avignon</loc>
+        <loc>https://heuredepriere.tech/avignon</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/bosanski-novi</loc>
+        <loc>https://heuredepriere.tech/bastia</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/bosanski-petrovac</loc>
+        <loc>https://heuredepriere.tech/bayonne</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/bosanski-samac</loc>
+        <loc>https://heuredepriere.tech/beauvais</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/bratunac</loc>
+        <loc>https://heuredepriere.tech/beziers</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/brcko</loc>
+        <loc>https://heuredepriere.tech/blois</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/breza</loc>
+        <loc>https://heuredepriere.tech/bordeaux</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/bugojno</loc>
+        <loc>https://heuredepriere.tech/bourges</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/busovaca</loc>
+        <loc>https://heuredepriere.tech/brest</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/buzim</loc>
+        <loc>https://heuredepriere.tech/caen</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/cazin</loc>
+        <loc>https://heuredepriere.tech/cahors</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/cajnice</loc>
+        <loc>https://heuredepriere.tech/calais</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/capljina</loc>
+        <loc>https://heuredepriere.tech/cambrai</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/celic</loc>
+        <loc>https://heuredepriere.tech/castelnaudary</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/celinac</loc>
+        <loc>https://heuredepriere.tech/ceyzerieu</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/citluk</loc>
+        <loc>https://heuredepriere.tech/chalon-sur-saone</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/derventa</loc>
+        <loc>https://heuredepriere.tech/chambery</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/doboj</loc>
+        <loc>https://heuredepriere.tech/charleville-mezieres</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/donji-vakuf</loc>
+        <loc>https://heuredepriere.tech/chartres</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/drvar</loc>
+        <loc>https://heuredepriere.tech/chateau-thierry</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/foca</loc>
+        <loc>https://heuredepriere.tech/chatellerault</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/fojnica</loc>
+        <loc>https://heuredepriere.tech/chevannes</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/gacko</loc>
+        <loc>https://heuredepriere.tech/clermont-ferrand</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/glamoc</loc>
+        <loc>https://heuredepriere.tech/cluses</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/gorazde</loc>
+        <loc>https://heuredepriere.tech/compiegne</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/gornji-vakuf</loc>
+        <loc>https://heuredepriere.tech/dieppe</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/gracanica</loc>
+        <loc>https://heuredepriere.tech/digne</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/gradacac</loc>
+        <loc>https://heuredepriere.tech/dijon</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/grude</loc>
+        <loc>https://heuredepriere.tech/dreux</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/hadzici</loc>
+        <loc>https://heuredepriere.tech/dunkerque</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/han-pijesak</loc>
+        <loc>https://heuredepriere.tech/etampes</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/hlivno</loc>
+        <loc>https://heuredepriere.tech/evry</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/ilijas</loc>
+        <loc>https://heuredepriere.tech/forbach</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/jablanica</loc>
+        <loc>https://heuredepriere.tech/grenoble</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/jajce</loc>
+        <loc>https://heuredepriere.tech/guingamp</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/kakanj</loc>
+        <loc>https://heuredepriere.tech/hennebont</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/kalesija</loc>
+        <loc>https://heuredepriere.tech/joue-les-tours</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/kalinovik</loc>
+        <loc>https://heuredepriere.tech/la-rochelle</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/kiseljak</loc>
+        <loc>https://heuredepriere.tech/lavelanet</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/kladanj</loc>
+        <loc>https://heuredepriere.tech/le-havre</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/kljuc</loc>
+        <loc>https://heuredepriere.tech/le-mans</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/konjic</loc>
+        <loc>https://heuredepriere.tech/lille</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/kotor-varos</loc>
+        <loc>https://heuredepriere.tech/limoges</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/kresevo</loc>
+        <loc>https://heuredepriere.tech/lonlay-l'abbaye</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/kupres</loc>
+        <loc>https://heuredepriere.tech/lorient</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/laktasi</loc>
+        <loc>https://heuredepriere.tech/lyon</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/lopare</loc>
+        <loc>https://heuredepriere.tech/maisons-alfort</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/lukavac</loc>
+        <loc>https://heuredepriere.tech/marignane</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/ljubinje</loc>
+        <loc>https://heuredepriere.tech/marseille</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/ljubuski</loc>
+        <loc>https://heuredepriere.tech/metz</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/maglaj</loc>
+        <loc>https://heuredepriere.tech/montauban</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/modrica</loc>
+        <loc>https://heuredepriere.tech/montereau-faut-yonne</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/mostar</loc>
+        <loc>https://heuredepriere.tech/montpellier</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/mrkonjic-grad</loc>
+        <loc>https://heuredepriere.tech/moulin</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/neum</loc>
+        <loc>https://heuredepriere.tech/moulins</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/nevesinje</loc>
+        <loc>https://heuredepriere.tech/mulhouse</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/novi-travnik</loc>
+        <loc>https://heuredepriere.tech/nancy</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/odzak</loc>
+        <loc>https://heuredepriere.tech/nantes</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/olovo</loc>
+        <loc>https://heuredepriere.tech/neuilly-sur-marne</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/orasje</loc>
+        <loc>https://heuredepriere.tech/nice</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/pale</loc>
+        <loc>https://heuredepriere.tech/nimes</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/posusje</loc>
+        <loc>https://heuredepriere.tech/orleans</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/prijedor</loc>
+        <loc>https://heuredepriere.tech/pamiers</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/prnjavor</loc>
+        <loc>https://heuredepriere.tech/paris</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/prozor</loc>
+        <loc>https://heuredepriere.tech/pau</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/rogatica</loc>
+        <loc>https://heuredepriere.tech/perpignan</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/rudo</loc>
+        <loc>https://heuredepriere.tech/poissy</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/sanski-most</loc>
+        <loc>https://heuredepriere.tech/poitiers</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/sarajevo</loc>
+        <loc>https://heuredepriere.tech/reims</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/skender-vakuf</loc>
+        <loc>https://heuredepriere.tech/rennes</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/sokolac</loc>
+        <loc>https://heuredepriere.tech/roanne</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/srbac</loc>
+        <loc>https://heuredepriere.tech/roissy-en-brie</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/srebrenica</loc>
+        <loc>https://heuredepriere.tech/rouen</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/srebrenik</loc>
+        <loc>https://heuredepriere.tech/saint-etienne</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/stolac</loc>
+        <loc>https://heuredepriere.tech/saint-quentin</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/sekovici</loc>
+        <loc>https://heuredepriere.tech/sallanches</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/sipovo</loc>
+        <loc>https://heuredepriere.tech/sannois</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/siroki-brijeg</loc>
+        <loc>https://heuredepriere.tech/sarreguemines</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/teslic</loc>
+        <loc>https://heuredepriere.tech/senlis</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/tesanj</loc>
+        <loc>https://heuredepriere.tech/sens</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/tomislav-grad</loc>
+        <loc>https://heuredepriere.tech/strasbourg</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/travnik</loc>
+        <loc>https://heuredepriere.tech/torcy</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/trebinje</loc>
+        <loc>https://heuredepriere.tech/toulon</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/trnovo</loc>
+        <loc>https://heuredepriere.tech/toulouse</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/tuzla</loc>
+        <loc>https://heuredepriere.tech/tours</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/ugljevik</loc>
+        <loc>https://heuredepriere.tech/troyes</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/vares</loc>
+        <loc>https://heuredepriere.tech/valence</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/velika-kladusa</loc>
+        <loc>https://heuredepriere.tech/vannes</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/visoko</loc>
+        <loc>https://heuredepriere.tech/versailles</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://vaktija.ba/visegrad</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/vitez</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/vlasenica</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/zavidovici</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/zenica</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/zvornik</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/zepa</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/zepce</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/zivinice</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/bijelo-polje</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/gusinje</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/nova-varos</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/novi-pazar</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/plav</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/pljevlja</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/priboj</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/prijepolje</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/rozaje</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/sjenica</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://vaktija.ba/tutin</loc>
+        <loc>https://heuredepriere.tech/vesoul</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
