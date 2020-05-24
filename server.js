@@ -7,10 +7,7 @@ const vaktija = require("./src/data/vaktija.json");
 const slugify = require("slugify");
 const app = express();
 
-const prerender = require("prerender-node").set(
-  "prerenderToken",
-  process.env.PRERENDER_TOKEN
-);
+const prerender = require('prerender-node').set('prerenderToken', '8P5QiPTom97eC5XRP2V9');
 prerender.crawlerUserAgents.push("googlebot");
 
 app.use(compression());
