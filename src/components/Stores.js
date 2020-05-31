@@ -1,62 +1,12 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ReactGA from "react-ga";
 import "./Stores.css";
 
 function Stores({ theme }) {
   return (
     <div className="text-center">
-      <a
-        onClick={() =>
-          ReactGA.event({
-            category: "Store",
-            action: "Google Play link clicked",
-            label: "Android",
-            nonInteraction: true
-          })
-        }
-        aria-label="Official Android App"
-        className={`store store-${theme}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://play.google.com/store/apps/details?id=ba.vaktija.android"
-      >
-        <FontAwesomeIcon icon={["fab", "android"]} size="3x" />
-      </a>
-      <a
-        onClick={() =>
-          ReactGA.event({
-            category: "Store",
-            action: "Apple Store link clicked",
-            label: "iOS",
-            nonInteraction: true
-          })
-        }
-        aria-label="Official iOS App"
-        className={`store store-${theme}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://itunes.apple.com/us/app/vaktija.ba/id1095343967?ls=1&mt=8"
-      >
-        <FontAwesomeIcon icon={["fab", "apple"]} size="3x" />
-      </a>
-      <a
-        onClick={() =>
-          ReactGA.event({
-            category: "Store",
-            action: "Windows Store link clicked",
-            label: "Windows",
-            nonInteraction: true
-          })
-        }
-        aria-label="Official Windows App"
-        className={`store store-${theme}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.microsoft.com/en-us/store/apps/vaktijaba/9nblggh5lc4p"
-      >
-        <FontAwesomeIcon icon={["fab", "windows"]} size="3x" />
-      </a>
+      <p className={`p p-${theme}`}>
+      Ces horaires mensuels imprimables sont proposés par notre le site <a href="https://heuredepriere.tech">heuredepriere.tech</a> , et sont destinés à celles et ceux qui n'ont pas de mosquée à proximité de chez eux, sans quoi cas il convient qu'ils suivent les horaires de leur mosquée.  Ils sont estimés par des calculs astronomiques et sont conformes aux avis du Conseil Européen de la Fatwa et de la Recherche (CEFR) et de la Ligue Islamique Mondiale.
+      </p>
     </div>
   );
 }

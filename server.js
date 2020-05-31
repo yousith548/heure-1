@@ -9,6 +9,8 @@ const app = express();
 
 const prerender = require('prerender-node').set('prerenderToken', '8P5QiPTom97eC5XRP2V9');
 prerender.crawlerUserAgents.push("googlebot");
+prerender.crawlerUserAgents.push('bingbot');
+prerender.crawlerUserAgents.push('yandex');
 
 app.use(compression());
 app.use(

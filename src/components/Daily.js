@@ -170,24 +170,12 @@ function Daily({ locationProps = 72, root }) {
 
 let newObj = Object.entries(_data.current.getPrayerTimes());
 
-
- 
-   
- 
-
   const localization = useCallback(() => {
     if (root && cookies.get("location") !== undefined) {
       return cookies.get("location");
     }
     return locationProps;
   }, [locationProps, root]);
-
-
-
-
-  
-
-
 
  const nextVakat = () => {
     const nextVakatPosition = daily(localization()).vakat.map((v, i) => ({
@@ -307,10 +295,6 @@ let newObj = Object.entries(_data.current.getPrayerTimes());
     e.preventDefault();
     document.getElementById("sidenav").style.width = "0";
   };
-    console.table(momentHijri()
-        .tz("Europe/Paris")
-        .format("D. MMMM YYYY")
-        .toLowerCase()); 
   
   return (
     <>
@@ -377,23 +361,23 @@ let newObj = Object.entries(_data.current.getPrayerTimes());
           </Col>
         </Row>
         <Row>
-          <Col className="text-center" xs={12} sm={12} md={12} lg={12}>
-            <Counter theme={theme} vakatTime={newObj[nextVakatPosition][1]} />
-          </Col>
-        </Row>
-        <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
-            <Location
-              theme={theme}
-              location={locationState}
-              locations={locations}
-            />
             <CurrentDate
               theme={theme}
               date={date}
               location={locationState}
               locations={locations}
             />
+            <Location
+              theme={theme}
+              location={locationState}
+              locations={locations}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col className="text-center" xs={12} sm={12} md={12} lg={12}>
+            <Counter theme={theme} vakatTime={newObj[nextVakatPosition][1]} />
           </Col>
         </Row>
         <Row>
